@@ -3,8 +3,8 @@ import datetime
 from datetime import date
 import time 
 
-NAME="Vivi"
-MESSAGE="Hi Poorvi, do you remember the 27th? You know exactly which one I mean, the most special day of my life, the day that means more to me than anything else. That date will always stay close to my heart because it gave me moments I will cherish forever. And do you remember Valentine’s week in 2024? We were standing at the auto stand and you had your favorite flower in your hands. I didn’t give it to you right away and you were a little upset with me, but when I finally did, you took it so gently and placed it inside your diary like it was something precious. That moment still makes me smile because it was not just about a flower, it was about us. And now here we are, another Valentine’s Day, your Valentine’s Day. This past year has been so beautiful. Yes, there were some hurdles along the way and we both know that, but what matters most is that we faced them together. Every challenge only made us stronger and brought us closer. Poorvi , I just want you to know how deeply I love you. You mean the world to me. You are my peace, my happiness, my strength. You are my home and my safe place. In you I find everything I need. You truly are my everything. On this Valentine’s Day I just want to promise you that my love for you will always remain pure and true. I want to stand beside you in every season of life, in laughter and in tears, in success and in struggle. I want to celebrate many more 27ths with you, create countless new memories and keep choosing you every single day. Happy Valentine’s Day my love. Forever yours."
+NAME="name"
+MESSAGE="H"
 year=2023
 month=5
 day=27
@@ -69,7 +69,8 @@ def story_page():
 
     col1, col2, col3 = st.columns([1, 4, 1]) 
     with col2:
-        st.image("sakshandvivi.jpeg",width=500)
+        st.write("he")
+        #st.image("sakshandvivi.jpeg",width=500)
 
     if st.button("Next 🎀"):
         st.session_state.page=3
@@ -169,7 +170,8 @@ def addonDays():
 def buildup():
     col1, col2, col3 = st.columns([1, 6, 1]) 
     with col2:
-        st.image("buildup.jpg", width=650)
+        st.write("he")
+        #st.image("buildup.jpg", width=650)
 
     if st.button("Okay I'm ready 🫶"):
         st.session_state.page=6
@@ -177,7 +179,8 @@ def buildup():
 def popping_question():
     col1, col2, col3 = st.columns([1, 6, 1]) 
     with col2:
-        st.video("Popping the question.mp4", format="video/mp4", start_time=0, subtitles=None, end_time=None, loop=False, autoplay=True, muted=False, width=650)
+        st.write("he")
+        #st.video("Popping the question.mp4", format="video/mp4", start_time=0, subtitles=None, end_time=None, loop=False, autoplay=True, muted=False, width=650)
     if st.button("Lemme answer 🫧"):
         st.session_state.page=7
 
@@ -232,7 +235,8 @@ elif st.session_state.page==6:
 elif st.session_state.page==7:
     answering()
     if st.session_state.page==8:
-        st.image("gonna be us.png")
+        st.write("he")
+        #st.image("gonna be us.png")
 
 else:
     st.write("aghhhh invalid")
