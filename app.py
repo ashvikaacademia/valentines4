@@ -3,8 +3,8 @@ import datetime
 from datetime import date
 import time 
 
-NAME="name"
-MESSAGE="H"
+NAME="[Name]"
+MESSAGE="[Cute story of how you guys met]"
 year=2023
 month=5
 day=27
@@ -170,8 +170,7 @@ def addonDays():
 def buildup():
     col1, col2, col3 = st.columns([1, 6, 1]) 
     with col2:
-        st.write("he")
-        #st.image("buildup.jpg", width=650)
+        st.image("buildup.jpg", width=650)
 
     if st.button("Okay I'm ready 🫶"):
         st.session_state.page=6
@@ -235,8 +234,7 @@ elif st.session_state.page==6:
 elif st.session_state.page==7:
     answering()
     if st.session_state.page==8:
-        st.write("he")
-        #st.image("gonna be us.png")
+        st.image("gonna be us.png")
 
 else:
     st.write("aghhhh invalid")
