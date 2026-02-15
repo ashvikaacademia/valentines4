@@ -69,8 +69,8 @@ def story_page():
 
     col1, col2, col3 = st.columns([1, 4, 1]) 
     with col2:
-        st.write("he")
-        #st.image("sakshandvivi.jpeg",width=500)
+        st.write("[Image of you guys together]")
+        #st.image(".jpeg",width=500)
 
     if st.button("Next 🎀"):
         st.session_state.page=3
@@ -84,7 +84,7 @@ def quiz():
     a1=st.radio(q1,o1)
     q2="🩰 What's your favourite memory of us?"
     a2=st.text_input(q2)
-    q3="🎲 Describe Saksham in 40-50 words"
+    q3="🎲 Describe your partner in 40-50 words"
     a3=st.text_input(q3)
     q4="🫶🏻 Where would you like to travel with me?"
     a4=st.text_input(q4)
@@ -99,7 +99,7 @@ def quiz():
             color:#191970; 
             }}
             </style>
-            <div class="a"><h4>Our date idea: {a1}. Your favourite memory of us is {a2} (Awwwww). According to you, we can be described by {a3} yayyyyy :P. Vivi, you would like to travel to: {a4} 💫</h4></div>
+            <div class="a"><h4>Our date idea: {a1}. Your favourite memory of us is {a2} (Awwwww). According to you, we can be described by {a3} yayyyyy :P. [Name], you would like to travel to: {a4} 💫</h4></div>
             """, unsafe_allow_html=True)
         
         else:
@@ -178,8 +178,7 @@ def buildup():
 def popping_question():
     col1, col2, col3 = st.columns([1, 6, 1]) 
     with col2:
-        st.write("he")
-        #st.video("Popping the question.mp4", format="video/mp4", start_time=0, subtitles=None, end_time=None, loop=False, autoplay=True, muted=False, width=650)
+        st.video("Popping the question.mp4", format="video/mp4", start_time=0, subtitles=None, end_time=None, loop=False, autoplay=True, muted=False, width=650)
     if st.button("Lemme answer 🫧"):
         st.session_state.page=7
 
