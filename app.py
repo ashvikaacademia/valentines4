@@ -236,4 +236,4 @@ elif st.session_state.page==7:
         st.image("gonna be us.png")
 
 else:
-    st.write("aghhhh invalid")
+    st.write("THE END <3")
